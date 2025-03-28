@@ -6,4 +6,8 @@ array = np.array([1,2,3,4,5])
 
 array1 = np.array([[1,2,3], [4,5,6]])
 # print(array1.ndim)
-print(array1[0,1] + array1[1,1]) # sum of 2 elems with slicing.
+# print(array1[0,1] + array1[1,1]) # sum of 2 elems with slicing.
+
+arr = np.array([[[1,2,3], [4,5,6]], [[7,8,9], [10,11,12]]])
+# print(arr.ndim)
+print(arr[1,1,0]) #10.
