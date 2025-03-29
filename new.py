@@ -10,4 +10,11 @@ array1 = np.array([[1,2,3], [4,5,6]])
 
 arr = np.array([[[1,2,3], [4,5,6]], [[7,8,9], [10,11,12]]])
 # print(arr.ndim)
-print(arr[1,1,0]) #10.
+# print(arr[1,1,0]) #10.
+
+arr = np.array([[[1,2,3], [4,5,6]], [[7,8,9], [10,11,12]]])
+print(arr.ndim) # 3 dimensions.
+print(arr.dtype) # datatype.
+# array iteration with numpy.
+for a in np.nditer(arr[0:, 0:, 2]):
+    print(a)
